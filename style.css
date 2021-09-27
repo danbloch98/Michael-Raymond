@@ -409,8 +409,8 @@ input[type=checkbox]:checked + label {
 }
 
 .clientsGrid img{
-  height: 250px;
-  width: 250px;
+  height: 319.5px;
+  width: 321px;
   margin-left: auto;
   margin-right: auto;
 
@@ -423,32 +423,65 @@ input[type=checkbox]:checked + label {
 /*Individual Player Page*/
 
 .playerGrid{
+
+  
+}
+@media (min-width: 1200px) {
+  .playerGrid { 
   max-width: 1200px;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
   margin-top: 50px;
-  gap: 100px;
+  gap: 50px;
+   }
+   .playerText{
+    font-size: 20px;
+    grid-column: 2 / span 3;
+    
+  }
+  .playerText h1{
+    text-align: center;
+  }
+  
+  .playerGridSub img{
+    width: 350px;
+    height: auto;
+    max-width: 350px;
+   
+  }
+  .playerGridSub2 img{
+    height: 250px;
+    width: auto;
+  }
+  .playerText{
+    float: right;
+  }
   
 }
-@media (min-width: 600px) {
-  .playerGrid { grid-template-columns: repeat(2, 1fr); }
+.playerGridSub{
+  text-align: center;
+}
+.playerGridSub img{
+  width: 350px;
+  height: auto;
+  max-width: 350px;
+}
+.playerText{
+  font-size: 20px;
+  text-align: justify;
 }
 .playerText h1{
   text-align: center;
 }
-.playerText{
-  font-size: 20px;
-  
-}
-.playerGridSub img{
-  width: 100%;
+.playerGridSub2 img{
+  width: 350px;
   height: auto;
- 
+  max-width: 350px;
 }
-
-.playerText{
-  float: right;
+.playerGridSub2{
+  text-align: center;
 }
 
 /*End Individual Player Page*/
