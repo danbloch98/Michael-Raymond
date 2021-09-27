@@ -88,11 +88,14 @@ ul li a{
    
    
 }
+.motto p{
+  text-align: center;
+}
 #mission h3 {
     font-size: 30px;
 }
 #mission p{
-    text-align: center;
+    text-align: justify;
     font-size: 25px;
     padding: 2%;
 }
