@@ -466,12 +466,15 @@ input[type=checkbox]:checked + label {
     display: grid;
    grid-template-columns: repeat(3, 1fr);
    text-align: center;
+   max-width: 1200px;
    gap: 50px;
   }
 }
 .Team{
   text-align: center;
   gap: 25px;
+  margin: 0 auto;
+  max-width: 1200px;
  
  }
 .Team img{
