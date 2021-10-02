@@ -243,10 +243,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
 }
-.containter{
-  margin: 0 auto;
-  text-align: center;
-}
+
 .styled-input {
     float: left;
     width: 293px;
@@ -255,9 +252,10 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     border-radius: 4px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 700px){
     .styled-input {
         width:100%;
+        max-width: ;
     }
 }
 
@@ -273,13 +271,14 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 }
 
 .styled-input.wide { 
-    width: 650px;
+    width: 700px;
     max-width: 100%;
 }
 
 input,
 textarea {
-    padding: 30px;
+    padding-bottom: 50px;
+    padding-right: 10px;
     border: solid black;
     border-width: 2px;
     width: 100%;
@@ -305,15 +304,19 @@ textarea {
 }
 
 .input-container {
-    width: 650px;
+    width: 600px;
     max-width: 100%;
-    margin: 20px auto 25px auto;
+    margin: 0 auto;
 }
 
 .submit-btn {
   float: right;
   display: grid;
-    padding: 7px 35px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+    padding-bottom: 10px;
     border-radius: 60px;
     background-color: #ff0000;
     color: white;
@@ -324,19 +327,22 @@ textarea {
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
 }
-
+.contactBox{
+  margin-bottom: 650px;
+  height: 100%;
+}
 .submit-btn:hover {
     transform: translateY(1px);
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
               0 1px 1px 0 rgba(0,0,0,0.09);
 }
-
-@media (max-width: 768px) {
-    .submit-btn {
-        width:100%;
-        float: none;
-        text-align:center;
-    }
+@media(max-width:1200px){
+  .submit-btn{
+    float: none;
+  }
+  .contactBox{
+    margin-bottom: 100px;
+  }
 }
 
 input[type=checkbox] + label {
