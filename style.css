@@ -10,7 +10,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  font-family: basker; 
+  font-family: Arial, Helvetica, sans-serif; 
 }
 /*nav bar*/
 .navBar{
@@ -32,15 +32,28 @@ header {
   font-weight: bold;
 }
 
-.navlogo img{
+.headerLogo img{
     margin: 0 auto;
-    display: block;
-    object-position: center;
-    object-fit: cover;
-    padding-top: 25px;
+
+    margin-left:-20px;
+    height: 150px;
+    width: auto;
 }
+.headerLogo h1{
+  margin: 0 auto;
+  font-size: 35px;
+  margin-top:-73px;
+  font-weight: 400;
 
+  margin-left: 75px;
+  text-align: center;
 
+}
+.headerLogo{
+  max-width:350px;
+  margin: 0 auto ;
+  margin-top: -30px;
+}
 .navLinks li {
    
    color: rgba(255, 255, 255, 0);
@@ -55,7 +68,7 @@ header {
 .navLinks li a:hover {
    
     text-decoration: underline red;
-    
+    text-decoration-thickness: 3px;
   }
 
   .dropdown-content a:hover {
@@ -108,8 +121,8 @@ header {
     font-size: 35px;
 }
 .mission p{
-    text-align: justify;
-    font-size: 30px;
+    text-align: center;
+    font-size: 35px;
     padding: 2%;
 }
 
@@ -124,10 +137,22 @@ display: block;
     width: 40%;
     height: auto;
     display: block;
+    width: 350px;
     min-width: 350px;
     max-width: 650px;
     margin: 0 auto;
     margin-bottom: 100px;
+}
+@media(min-width:1200px){
+  .logo img{
+    width: 40%;
+    height: auto;
+    display: block;
+    width: 600px;
+   
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
 }
 /*index ends*/
 
@@ -140,8 +165,13 @@ display: block;
 .footer h3{
   text-align: center;
   margin: 0 auto;
-  font-size: 25px;
+  text-decoration: underline black;
+  font-size: 35px;
   margin-bottom: 15px;
+}
+.footer img{
+  height: 35px;
+  width: auto;
 }
 .footer li {
    
@@ -249,15 +279,16 @@ width: 100%;
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
     font-size: 0.75em;
-    color: #999;
     top: -5px;
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
+    opacity: 0%;
 }
 
 .styled-input {
     float: left;
     width: 293px;
+    
     margin: 1rem 0;
     position: relative;
     border-radius: 4px;
@@ -295,10 +326,12 @@ textarea {
     width: 100%;
     font-size: 1rem;
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
     border-radius: 4px;
 }
+input{
+  font-size: 25px;
 
+}
 input:focus,
 textarea:focus { outline: 0; }
 
@@ -324,20 +357,28 @@ textarea {
   float: none;
   display: grid;
     padding-right: 10px;
+    text-decoration: none;
     padding-top: 10px;
     padding-left: 10px;
     text-align: center;
     padding-bottom: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 150px;
     border-radius: 60px;
-    background-color: #ff0000;
-    color: white;
+    background-color: #000000;
+    color: rgb(255, 0, 0);
     font-size: 18px;
     cursor: pointer;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
-              0 2px 10px 0 rgba(0,0,0,0.07);
+    box-shadow: 0 2px 5px 0 red,
+              0 2px 10px 0 red;
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
+}
+.button{
+  text-decoration: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
 }
 .contactBox{
 
@@ -355,6 +396,11 @@ textarea {
   .contactBox{
     margin-bottom: 100px;
   }
+}
+.btn-lrg submit-btn{
+  text-decoration: none;
+  background-color: red;
+  font-size: 30px;
 }
 
 input[type=checkbox] + label {
@@ -377,6 +423,7 @@ input[type=checkbox]:checked + label {
      grid-template-columns: repeat(4, 1fr);
      
    }
+
 }
 .clientsGrid {
   max-width: 1200px;
@@ -387,6 +434,25 @@ input[type=checkbox]:checked + label {
   gap: 55px;
   margin-bottom: 80px;
 
+}
+.clientsGridEsports{
+  max-width: 1200px;
+
+  margin: 0 auto;
+  text-align: center;
+  grid-column: 2;
+  margin-top: 50px;
+  gap: 55px;
+  margin-bottom: 80px;
+}
+.clientsGridEsports img:hover {
+  transform: scale(1.1);
+
+ }
+ .clientsGridEsports img{
+  height: 319.5px;
+  max-width: 321px;
+  width: 100%;
 }
 .clientsGrid img:hover {
   transform: scale(1.1);
@@ -405,8 +471,9 @@ input[type=checkbox]:checked + label {
   color: #000;
 }
 .clientsGrid img{
-  height: 319.5px;
+  height: 339.5px;
   max-width: 321px;
+  
   width: 100%;
 }
 
@@ -480,7 +547,7 @@ input[type=checkbox]:checked + label {
 /*Team Page*/
 
 @media(min-width: 1200px){
-  .Team{
+  .Team,.internTeam{
     display: grid;
    grid-template-columns: repeat(3, 1fr);
    text-align: center;
@@ -495,7 +562,13 @@ input[type=checkbox]:checked + label {
   max-width: 1200px;
  
  }
-.Team img{
+ .internTeam{
+  text-align: center;
+  gap: 25px;
+  margin: 0 auto;
+  max-width: 1200px;
+ }
+.Team img,.internTeam img{
   height: 350px;
   width: auto;
 }
@@ -510,7 +583,7 @@ input[type=checkbox]:checked + label {
   margin-right: auto;
   object-position: center;
 }
-.intern{
+.internTeam{
   text-align: center;
   margin-bottom: 80px;
   
@@ -546,7 +619,7 @@ input[type=checkbox]:checked + label {
   height: 45px;
   margin-top: 15px;
   border: 5px solid red;
-  background-color: #FFF;
+  background-color: rgb(0, 0, 0);
 
   
  
@@ -557,7 +630,7 @@ input[type=checkbox]:checked + label {
  }
 .box a{
   text-decoration: none;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 .xReturn p{
   margin: 0 auto;
