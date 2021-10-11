@@ -113,12 +113,12 @@ header {
     height: 500px;
     width: 100%;
     object-fit: cover;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 .mission{
     text-align: center;
     padding: 5%;
-    font-size: 35px;
+    font-size: 40px;
     max-width: 1200px;
     margin: 0 auto;  
     margin-bottom: -50px; 
@@ -127,7 +127,7 @@ header {
   text-align: center;
 }
 .mission h3 {
-  font-size: 35px;
+  font-size: 40px;
    
 }
 @media(max-width:1200px){
