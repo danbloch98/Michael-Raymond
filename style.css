@@ -19,64 +19,106 @@ body {
   }
   .headerLogo{
    font-size: 15px;
- }
+  }
 }
-.navBar{
-  width: 100%;
-  min-height: 100vh;
-  box-sizing: border-box;
-  overflow: hidden;
+
+.headerLogo{
+  padding-right: 300px;
 }
-.navLinks{
-  font-size: 20px;
-}
-.clientsBar, td{
-display: grid;
-grid-template-columns: 1fr 
-}
+
 
 
 header {
   font-weight: bold;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-right: 200px;
+  margin-bottom: 25px;
 }
 
 .headerLogo img{
-    margin: 0 auto;
+  margin: 0 auto;
+  height: 150px;
+  width: auto;
+  padding-right: -1200px;
+}
 
-    margin-left:-20px;
-    height: 150px;
-    width: auto;
+.navigation{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+ 
+ 
+}
+
+.headerLogo h1{
+margin: 0 auto;
+font-size: 40px;
+margin-top:-80px;
+font-weight: 400;
+margin-right: -400px;
+text-align: center;
+
+}
+
+@media(min-width:1200px){
+
+.navigation{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 0 auto;
+  max-width: 500px;
+  margin-left: 500px;
+  margin-top: -55px;
+}
+.headerLogo img{
+  margin: 0 auto;
+  margin-left:-200px;
+  height: 150px;
+  width: auto;
 }
 .headerLogo h1{
-  margin: 0 auto;
-  font-size: 35px;
-  margin-top:-73px;
-  font-weight: 400;
-
-  margin-left: 75px;
-  text-align: center;
+margin: 0 auto;
+font-size: 40px;
+margin-top:-80px;
+font-weight: 400;
+margin-left: -250px;
+text-align: center;
 
 }
+}
+.navigation a{
+  text-decoration: none;
+  color: #000;
+  font-size: 20px; 
+}
+.border p{
+  text-align: center;
+  width: 80px;
+
+}
+.border{
+  border-style: solid;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 70px;
+  min-width: 70px;
+  height: 60px;
+}
+
+
 .headerLogo{
   max-width:350px;
   margin: 0 auto ;
   margin-top: -30px;
 }
-.navLinks li {
-   
-   color: rgba(255, 255, 255, 0);
-   padding: 16px;
-   text-decoration: none;
-   display: inline-block;
-   
-}
+
 .header {
     color: black;
 }
-.navLinks li a:hover {
-   
-    text-decoration: underline red;
-    text-decoration-thickness: 3px;
+.border:hover {
+background-color: #f00;
   }
 
   .dropdown-content a:hover {
@@ -84,23 +126,7 @@ header {
     background-color: red;
     
   }
-.navLinks ul{
-    display: block;
-    text-align: center;
- width: 100%;
-  padding: 0;
-  top: 0;
-  margin:auto;
- 
 
-}
-.navLinks ul li a{
-    color: black;
-    text-decoration: none;
-    
-    
-    
-}
 /*nav bar end*/
 
 
@@ -113,7 +139,7 @@ header {
     height: 500px;
     width: 100%;
     object-fit: cover;
-  padding-bottom: 175px;
+  padding-bottom: 200px;
 }
 .mission{
     text-align: center;
@@ -256,7 +282,7 @@ width: 100%;
 
 
 
-  .dropdown:hover .dropdown-content {display: block;}
+  .border:hover .dropdown-content {display: block;}
   
   .dropbtn {
     text-decoration: none;
@@ -266,7 +292,7 @@ width: 100%;
     border: none;
   }
   
-  .dropdown {
+  .border {
     position: relative;
     display: inline-block;
   }
